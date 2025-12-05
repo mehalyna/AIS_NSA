@@ -90,10 +90,10 @@ However, classic NSA typically uses Euclidean distance, which does not account f
 
 ### Covariance Estimation & Inversion
 
-1. **Compute Covariance Matrix \(\Sigma\):**  
-   \[
+1. **Compute Covariance Matrix ($\Sigma$):**  
+  
      \Sigma = \text{np.cov}( \text{self_samples},\, \text{rowvar} = False ).
-   \]
+  
 2. **Regularization (Ridge):**  
    \[
      \Sigma_{\text{reg}} = \Sigma + \varepsilon I,\quad \varepsilon = 10^{-6}.
